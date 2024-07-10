@@ -1,17 +1,19 @@
-/**
-* Template Name: Laura
-* Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*-----------------
 Hello I'm Igor Lazzaretti, from igorlazzaretti.com. I am an web developer and
 this web project is for educational purposes and will serve a non-profit 
 volunteer organization operating in Caxias do Sul (RS), Brazil. 
-
 -------------------*/
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+:root{
+  --main-pink: #E9426D;
+  --nd-pink:#EFA0B4;
+  --main-gray: gray;
+  --nd-gray:#CEC0C0;
+  --main-white: white;
+  --main-black: black;  }
 
 /*--------------------------------------------------------------
 # General
@@ -27,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: #ffc85a;
+  color: var(--nd-pink);
   text-decoration: none;
 }
 
@@ -39,19 +41,7 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-/*--------------------------------------------------------------
-# Colors
---------------------------------------------------------------*/
-:root{
---main-pink: #E9426D;
---nd-pink:#EFA0B4;
---main-gray: gray;
---nd-gray:#CEC0C0;
---main-white: white;
---main-black: black;
 
-
-}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -344,7 +334,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.65);
+  background:rgba(0, 0, 0, 0.55);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1129,7 +1119,9 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #ffc85a;
+
+  color: var(--main-black);
+  border-color: var(--main-pink);
 }
 
 .pricing .featured h3 {
@@ -1323,7 +1315,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #footer .container {
